@@ -1,17 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+var linguagem = "dorime";
+
+var date = new Date();
+
+var year = date.getFullYear(); //JSX
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+  <div>
+    <App/>
+  <h1 className="color" contentEditable= 'true'>My favourite computer languages</h1>
+      <ol>
+    <li>
+      java
+    </li>
+    <li>php {linguagem}</li>
+    <li>javascript</li>
+    <li>c#</li>
+  </ol>
+  <p>{year}</p>
+  </div>
+  ,
+  document.getElementById('root'));
