@@ -1,12 +1,12 @@
-import React from 'react';
+const favnumber = 75;
 
-
-function Heading(){
-    return (
-    <div>
-        <h1>my favourite games Heading</h1>
-        </div>
-        );
+function multiplyfav(){
+    return favnumber *2;
 }
 
-export default Heading;
+function dividefav(){
+    return favnumber /2;
+}
+export default favnumber;
+
+export {multiplyfav,dividefav}
